@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "category": "chicken",
+    "titleAr": "دجاج مضغوط",
+    "titleEn": "Pressed Chicken",
+    "descriptionAr": "دجاج طازج من إنتاج مزارع الوطنية، حبة دجاج مضغوط",
+    "descriptionEn": "Fresh chicken from Al-Watania farms, one whole pressed chicken",
+    "price": 44,
+    "image": "/images/madghout.jpg"
+  },
+  {
+    "id": 2,
+    "category": "grill",
+    "titleAr": "دجاج على الفحم",
+    "titleEn": "Charcoal Chicken",
+    "descriptionAr": "دجاج طازج متبل ومشوي على الفحم بخلطة خاصة",
+    "descriptionEn": "Fresh marinated chicken grilled on charcoal with special mix",
+    "price": 44,
+    "image": "/images/charcoal.jpg"
+  }
+]
