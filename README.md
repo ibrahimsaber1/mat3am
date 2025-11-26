@@ -4,8 +4,7 @@ A modern, fully responsive bilingual (Arabic/English) restaurant website built w
 
 <img width="1920" height="4128" alt="screencapture-elmat3am-netlify-app-2025-11-26-02_52_59" src="https://github.com/user-attachments/assets/70eff3c1-7dfd-44fc-9a06-d1be29b6749d" />
 
-
-![Restaurant Website](./ Fully responsive design for mobile, tablet, and desktop
+ Fully responsive design for mobile, tablet, and desktop
 - Bilingual support (Arabic/English) with RTL/LTR layout switching
 - Dynamic menu loaded from JSON files
 - Google Maps integration
@@ -64,6 +63,4 @@ The built files will be in the `dist` folder.
 - **About**: Restaurant story, mission, and location
 
 ----
-- **Contact**: Contact form and information
 
-b/react-food-website-template)
