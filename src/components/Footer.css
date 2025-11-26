@@ -1,0 +1,126 @@
+/* Footer Enhancements */
+footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.footer-heading {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #ffc107 0%, #ff9800 100%);
+}
+
+[dir="rtl"] .footer-heading::after {
+  left: auto;
+  right: 0;
+}
+
+/* Social Links */
+.social-link {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.social-link:hover {
+  color: #ffc107 !important;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/* Footer Links */
+.footer-links a {
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #ffc107 !important;
+  transform: translateX(5px);
+  padding-left: 5px;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-5px);
+  padding-right: 5px;
+  padding-left: 0;
+}
+
+/* Footer Contact Links */
+.footer-contact a:hover {
+  color: #ffc107 !important;
+  text-decoration: underline !important;
+}
+
+/* Map Container */
+.map-container {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Default Food Image Placeholder */
+.menu-card-img-wrapper img {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+/* Enhanced Menu Card */
+.menu-card {
+  position: relative;
+}
+
+.menu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 193, 7, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+.menu-card:hover::before {
+  opacity: 1;
+}
+
+/* Footer Responsive */
+@media (max-width: 768px) {
+  .footer-heading::after {
+    width: 40px;
+  }
+  
+  .social-icons {
+    text-align: center;
+  }
+  
+  .map-container iframe {
+    height: 250px;
+  }
+}
+
+/* Improved Button Hover in Footer */
+.btn-warning.btn-sm {
+  transition: all 0.3s ease;
+}
+
+.btn-warning.btn-sm:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+}

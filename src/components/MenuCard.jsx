@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { useLanguage } from '../context/LanguageContext';
 
 const MenuCard = ({ item }) => {
   const { t } = useLanguage();
+  const [imgError, setImgError] = useState(false);
+
+  // Fallback image path
+  const fallbackImage = '/src/assets/default-food.png';
+
+  const handleImageError = () => {
+    setImgError(true);
+  };
 
   return (
     <Card className="menu-card h-100 shadow-sm">
       <div className="menu-card-img-wrapper">
         <Card.Img 
           variant="top" 
-          src={item.img} 
+          src={imgError ? fallbackImage : item.img} 
           alt={t(item.name)}
           loading="lazy"
+          onError={handleImageError}
         />
         <div className="menu-card-overlay">
           <span className="badge bg-warning text-dark">
@@ -20,14 +29,22 @@ const MenuCard = ({ item }) => {
           </span>
         </div>
       </div>
-      <Card.Body>
+      <Card.Body className="d-flex flex-column">
         <Card.Title className="fw-bold">{t(item.name)}</Card.Title>
-        <Card.Text className="text-muted small">
+        <Card.Text className="text-muted small flex-grow-1">
           {t(item.dsc)}
         </Card.Text>
-        <div className="d-flex justify-content-between align-items-center">
-          <span className="badge bg-secondary">{t(item.category)}</span>
-          <span className="fs-5 fw-bold text-primary">${item.price}</span>
+        <div className="mt-auto">
+          <div className="d-flex justify-content-between align-items-center mb-2">
+            <span className="badge bg-secondary">{t(item.category)}</span>
+            <span className="fs-5 fw-bold text-primary">${item.price}</span>
+          </div>
+          {item.country && (
+            <div className="text-muted small">
+              <i className="fas fa-map-marker-alt me-1"></i>
+              {item.country}
+            </div>
+          )}
         </div>
       </Card.Body>
     </Card>
