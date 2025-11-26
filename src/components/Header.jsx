@@ -14,7 +14,7 @@ const Header = () => {
     menu: { ar: 'قائمة الطعام', en: 'Menu' },
     about: { ar: 'من نحن', en: 'About Us' },
     contact: { ar: 'تواصل معنا', en: 'Contact' },
-    restaurantName: { ar: 'مطعم قائمة الطعام', en: 'Food Menu Restaurant' }
+    restaurantName: { ar: 'المطعم', en: 'mat3am' }
   };
 
   return (

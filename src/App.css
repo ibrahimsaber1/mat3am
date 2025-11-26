@@ -170,6 +170,205 @@ footer a:hover {
   transform: translateX(-5px);
 }
 
+
+/* Hero Section with Background Image - Inside Restaurant */
+.hero-section-new {
+  position: relative;
+  background-image: url('/src/assets/inside-restaurant.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(102, 126, 234, 0.6) 100%);
+  min-height: 100vh;
+}
+
+.hero-title {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease-out;
+}
+
+/* About Page Hero - Outside Restaurant */
+.about-hero-section {
+  position: relative;
+  background-image: url('/src/assets/outside-restaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
+
+.about-hero-overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(139, 69, 19, 0.5) 100%);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Special Offers Section */
+.offers-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.offer-card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.bg-gradient-danger {
+  background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%);
+}
+
+.offer-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Featured Menu Section */
+.featured-menu-section {
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+}
+
+/* Enhanced Feature Cards */
+.feature-card-new {
+  background: white;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card-new:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon-new {
+  transition: transform 0.3s ease;
+}
+
+.feature-card-new:hover .feature-icon-new {
+  transform: rotateY(360deg);
+}
+
+/* Value Cards */
+.value-card-new {
+  background: white;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.value-card-new:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.value-icon {
+  transition: transform 0.3s ease;
+}
+
+.value-card-new:hover .value-icon {
+  transform: scale(1.2) rotateZ(5deg);
+}
+
+/* Location Card */
+.location-card {
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Font Awesome Icons Enhancement */
+.fas, .fab {
+  transition: all 0.3s ease;
+}
+
+/* Enhanced Buttons */
+.btn-warning {
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  border: none;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+}
+
+.btn-outline-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section-new,
+  .hero-overlay {
+    min-height: 80vh;
+  }
+  
+  .about-hero-section,
+  .about-hero-overlay {
+    min-height: 40vh;
+  }
+  
+  .display-2 {
+    font-size: 2.5rem;
+  }
+  
+  .display-3 {
+    font-size: 2rem;
+  }
+  
+  .offer-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation Enhancement */
+.menu-card img {
+  transition: all 0.5s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.15);
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .display-3 {
